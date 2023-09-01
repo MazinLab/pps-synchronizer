@@ -1,0 +1,38 @@
+<pragmas>
+<pragma file="src/toplevel.cpp" line="49" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="ap_ctrl_none" port="return" name=""/>
+<pragma file="src/toplevel.cpp" line="51" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="s_axilite" port="mode_reg" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src/toplevel.cpp" line="52" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="s_axilite" port="counter_config_reg" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src/toplevel.cpp" line="53" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="s_axilite" port="counter_status_reg" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src/toplevel.cpp" line="54" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="s_axilite" port="delay_ns_reg" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src/toplevel.cpp" line="55" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="s_axilite" port="load_secs_reg" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src/toplevel.cpp" line="56" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="s_axilite" port="load_ns_reg" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src/toplevel.cpp" line="57" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="s_axilite" port="load_subns_reg" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src/toplevel.cpp" line="58" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="s_axilite" port="capture_secs_reg" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src/toplevel.cpp" line="59" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="s_axilite" port="capture_ns_reg" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src/toplevel.cpp" line="60" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="s_axilite" port="capture_subns_reg" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src/toplevel.cpp" line="61" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="s_axilite" port="current_secs_reg" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src/toplevel.cpp" line="62" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="s_axilite" port="current_ns_reg" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src/toplevel.cpp" line="63" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="s_axilite" port="current_subns_reg" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src/toplevel.cpp" line="64" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="s_axilite" port="lockout_reg" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src/toplevel.cpp" line="65" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="s_axilite" port="rollover_thresh_reg" bundle="" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="src/toplevel.cpp" line="67" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="ap_none" port="load_secs_ctl" name="" register="0"/>
+<pragma file="src/toplevel.cpp" line="68" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="ap_none" port="load_ns_ctl" name="" register="0"/>
+<pragma file="src/toplevel.cpp" line="69" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="ap_none" port="load_subns_ctl" name="" register="0"/>
+<pragma file="src/toplevel.cpp" line="70" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="ap_none" port="ns_per_clk_ctl" name="" register="0"/>
+<pragma file="src/toplevel.cpp" line="71" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="ap_none" port="subns_per_clk_ctl" name="" register="0"/>
+<pragma file="src/toplevel.cpp" line="72" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="ap_none" port="delay_ns_ctl" name="" register="0"/>
+<pragma file="src/toplevel.cpp" line="73" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="ap_none" port="lockout_ctl" name="" register="0"/>
+<pragma file="src/toplevel.cpp" line="74" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="ap_none" port="rollover_thresh_ctl" name="" register="0"/>
+<pragma file="src/toplevel.cpp" line="75" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="ap_none" port="mode_ctl" name="" register="0"/>
+<pragma file="src/toplevel.cpp" line="76" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="ap_none" port="capture_mode_ctl" name="" register="0"/>
+<pragma file="src/toplevel.cpp" line="77" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="ap_none" port="sanity_mode_ctl" name="" register="0"/>
+<pragma file="src/toplevel.cpp" line="78" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="ap_none" port="pps_sel_ctl" name="" register="0"/>
+<pragma file="src/toplevel.cpp" line="79" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="ap_none" port="captured_secs_in" name="" register="0"/>
+<pragma file="src/toplevel.cpp" line="80" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="ap_none" port="captured_ns_in" name="" register="0"/>
+<pragma file="src/toplevel.cpp" line="81" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="ap_none" port="captured_subns_in" name="" register="0"/>
+<pragma file="src/toplevel.cpp" line="82" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="ap_none" port="running_in" name="" register="0"/>
+<pragma file="src/toplevel.cpp" line="83" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="ap_none" port="secs_in" name="" register="0"/>
+<pragma file="src/toplevel.cpp" line="84" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="ap_none" port="ns_in" name="" register="0"/>
+<pragma file="src/toplevel.cpp" line="85" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="ap_none" port="subns_in" name="" register="0"/>
+<pragma file="src/toplevel.cpp" line="86" pragmaType="interface" parentfunction="pps_synchronizer_control" mode="ap_none" port="captured_in" name="" register="0"/>
+</pragmas>

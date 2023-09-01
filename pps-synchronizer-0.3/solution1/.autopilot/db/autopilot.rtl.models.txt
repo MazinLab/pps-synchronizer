@@ -1,0 +1,2 @@
+pps_synchronizer_control_control_s_axi
+pps_synchronizer_control

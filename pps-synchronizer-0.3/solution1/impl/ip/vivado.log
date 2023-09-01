@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Aug 22 16:56:41 2023
+# Process ID: 1446512
+# Current directory: /home/cudaa/Workspace/hls/pps-synchronizer/pps-synchronizer/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/cudaa/Workspace/hls/pps-synchronizer/pps-synchronizer/solution1/impl/ip/vivado.log
+# Journal file: /home/cudaa/Workspace/hls/pps-synchronizer/pps-synchronizer/solution1/impl/ip/vivado.jou
+# Running On: wheatley, OS: Linux, CPU Frequency: 2890.578 MHz, CPU Physical cores: 32, Host memory: 540635 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/localdata/xilinx/Vivado/2022.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 22 16:56:47 2023...

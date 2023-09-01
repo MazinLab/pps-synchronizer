@@ -1,0 +1,1702 @@
+{
+  "Top": "pps_synchronizer_control",
+  "RtlTop": "pps_synchronizer_control",
+  "RtlPrefix": "",
+  "RtlSubPrefix": "pps_synchronizer_control_",
+  "SourceLanguage": "cpp",
+  "HostMachineBits": "64",
+  "FunctionProtocol": "ap_ctrl_none",
+  "ResetStyle": "control",
+  "Target": {
+    "Family": "zynquplus",
+    "Device": "xczu28dr",
+    "Package": "-ffvg1517",
+    "Speed": "-2-e",
+    "Triple": "fpga64-xilinx-none"
+  },
+  "Args": {
+    "mode_reg": {
+      "index": "0",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "mode_reg",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "counter_config_reg": {
+      "index": "1",
+      "direction": "in",
+      "srcType": "*",
+      "srcSize": "16",
+      "hwRefs": [{
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "counter_config_reg",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "counter_status_reg": {
+      "index": "2",
+      "direction": "out",
+      "srcType": "*",
+      "srcSize": "16",
+      "hwRefs": [
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "counter_status_reg",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "counter_status_reg_ctrl",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "delay_ns_reg": {
+      "index": "3",
+      "direction": "in",
+      "srcType": "unsigned int*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "delay_ns_reg",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "load_secs_reg": {
+      "index": "4",
+      "direction": "in",
+      "srcType": "unsigned int*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "load_secs_reg",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "load_ns_reg": {
+      "index": "5",
+      "direction": "in",
+      "srcType": "unsigned int*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "load_ns_reg",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "load_subns_reg": {
+      "index": "6",
+      "direction": "in",
+      "srcType": "unsigned char*",
+      "srcSize": "8",
+      "hwRefs": [{
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "load_subns_reg",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "capture_secs_reg": {
+      "index": "7",
+      "direction": "out",
+      "srcType": "unsigned int*",
+      "srcSize": "32",
+      "hwRefs": [
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "capture_secs_reg",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "capture_secs_reg_ctrl",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "capture_ns_reg": {
+      "index": "8",
+      "direction": "out",
+      "srcType": "unsigned int*",
+      "srcSize": "32",
+      "hwRefs": [
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "capture_ns_reg",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "capture_ns_reg_ctrl",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "capture_subns_reg": {
+      "index": "9",
+      "direction": "out",
+      "srcType": "unsigned char*",
+      "srcSize": "8",
+      "hwRefs": [
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "capture_subns_reg",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "capture_subns_reg_ctrl",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "current_secs_reg": {
+      "index": "10",
+      "direction": "out",
+      "srcType": "unsigned int*",
+      "srcSize": "32",
+      "hwRefs": [
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "current_secs_reg",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "current_secs_reg_ctrl",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "current_ns_reg": {
+      "index": "11",
+      "direction": "out",
+      "srcType": "unsigned int*",
+      "srcSize": "32",
+      "hwRefs": [
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "current_ns_reg",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "current_ns_reg_ctrl",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "current_subns_reg": {
+      "index": "12",
+      "direction": "out",
+      "srcType": "unsigned char*",
+      "srcSize": "8",
+      "hwRefs": [
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "current_subns_reg",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "current_subns_reg_ctrl",
+          "usage": "control",
+          "direction": "out"
+        }
+      ]
+    },
+    "lockout_reg": {
+      "index": "13",
+      "direction": "in",
+      "srcType": "unsigned short*",
+      "srcSize": "16",
+      "hwRefs": [{
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "lockout_reg",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "rollover_thresh_reg": {
+      "index": "14",
+      "direction": "in",
+      "srcType": "unsigned int*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "register",
+          "interface": "s_axi_control",
+          "name": "rollover_thresh_reg",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "load_secs_ctl": {
+      "index": "15",
+      "direction": "out",
+      "srcType": "unsigned int&",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "load_secs_ctl",
+          "name": "load_secs_ctl",
+          "usage": "data",
+          "direction": "out"
+        }]
+    },
+    "load_ns_ctl": {
+      "index": "16",
+      "direction": "out",
+      "srcType": "unsigned int&",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "load_ns_ctl",
+          "name": "load_ns_ctl",
+          "usage": "data",
+          "direction": "out"
+        }]
+    },
+    "load_subns_ctl": {
+      "index": "17",
+      "direction": "out",
+      "srcType": "unsigned char&",
+      "srcSize": "8",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "load_subns_ctl",
+          "name": "load_subns_ctl",
+          "usage": "data",
+          "direction": "out"
+        }]
+    },
+    "ns_per_clk_ctl": {
+      "index": "18",
+      "direction": "out",
+      "srcType": "ap_uint<6>&",
+      "srcSize": "8",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "ns_per_clk_ctl",
+          "name": "ns_per_clk_ctl",
+          "usage": "data",
+          "direction": "out"
+        }]
+    },
+    "subns_per_clk_ctl": {
+      "index": "19",
+      "direction": "out",
+      "srcType": "unsigned char&",
+      "srcSize": "8",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "subns_per_clk_ctl",
+          "name": "subns_per_clk_ctl",
+          "usage": "data",
+          "direction": "out"
+        }]
+    },
+    "delay_ns_ctl": {
+      "index": "20",
+      "direction": "out",
+      "srcType": "unsigned int&",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "delay_ns_ctl",
+          "name": "delay_ns_ctl",
+          "usage": "data",
+          "direction": "out"
+        }]
+    },
+    "lockout_ctl": {
+      "index": "21",
+      "direction": "out",
+      "srcType": "unsigned short&",
+      "srcSize": "16",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "lockout_ctl",
+          "name": "lockout_ctl",
+          "usage": "data",
+          "direction": "out"
+        }]
+    },
+    "rollover_thresh_ctl": {
+      "index": "22",
+      "direction": "out",
+      "srcType": "unsigned int&",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "rollover_thresh_ctl",
+          "name": "rollover_thresh_ctl",
+          "usage": "data",
+          "direction": "out"
+        }]
+    },
+    "mode_ctl": {
+      "index": "23",
+      "direction": "out",
+      "srcType": "ap_uint<4>&",
+      "srcSize": "8",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "mode_ctl",
+          "name": "mode_ctl",
+          "usage": "data",
+          "direction": "out"
+        }]
+    },
+    "capture_mode_ctl": {
+      "index": "24",
+      "direction": "out",
+      "srcType": "ap_uint<2>&",
+      "srcSize": "8",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "capture_mode_ctl",
+          "name": "capture_mode_ctl",
+          "usage": "data",
+          "direction": "out"
+        }]
+    },
+    "sanity_mode_ctl": {
+      "index": "25",
+      "direction": "out",
+      "srcType": "ap_uint<3>&",
+      "srcSize": "8",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "sanity_mode_ctl",
+          "name": "sanity_mode_ctl",
+          "usage": "data",
+          "direction": "out"
+        }]
+    },
+    "pps_sel_ctl": {
+      "index": "26",
+      "direction": "out",
+      "srcType": "ap_uint<3>&",
+      "srcSize": "8",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "pps_sel_ctl",
+          "name": "pps_sel_ctl",
+          "usage": "data",
+          "direction": "out"
+        }]
+    },
+    "captured_secs_in": {
+      "index": "27",
+      "direction": "in",
+      "srcType": "unsigned int*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "captured_secs_in",
+          "name": "captured_secs_in",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "captured_ns_in": {
+      "index": "28",
+      "direction": "in",
+      "srcType": "unsigned int*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "captured_ns_in",
+          "name": "captured_ns_in",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "captured_subns_in": {
+      "index": "29",
+      "direction": "in",
+      "srcType": "unsigned char*",
+      "srcSize": "8",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "captured_subns_in",
+          "name": "captured_subns_in",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "running_in": {
+      "index": "30",
+      "direction": "in",
+      "srcType": "ap_uint<1>*",
+      "srcSize": "8",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "running_in",
+          "name": "running_in",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "secs_in": {
+      "index": "31",
+      "direction": "in",
+      "srcType": "unsigned int*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "secs_in",
+          "name": "secs_in",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "ns_in": {
+      "index": "32",
+      "direction": "in",
+      "srcType": "unsigned int*",
+      "srcSize": "32",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "ns_in",
+          "name": "ns_in",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "subns_in": {
+      "index": "33",
+      "direction": "in",
+      "srcType": "unsigned char*",
+      "srcSize": "8",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "subns_in",
+          "name": "subns_in",
+          "usage": "data",
+          "direction": "in"
+        }]
+    },
+    "captured_in": {
+      "index": "34",
+      "direction": "in",
+      "srcType": "ap_uint<1>*",
+      "srcSize": "8",
+      "hwRefs": [{
+          "type": "port",
+          "interface": "captured_in",
+          "name": "captured_in",
+          "usage": "data",
+          "direction": "in"
+        }]
+    }
+  },
+  "HlsSolution": {
+    "FlowTarget": "vivado",
+    "ConfigTcl": [
+      "config_interface -m_axi_latency=0",
+      "config_export -description {Create a counter synchronized to a 1PPS signal}",
+      "config_export -display_name {PPS Synchronizer}",
+      "config_export -format=ip_catalog",
+      "config_export -library=mkidgen3",
+      "config_export -rtl=verilog",
+      "config_export -vendor=MazinLab",
+      "config_export -version=0.3"
+    ],
+    "DirectiveTcl": ["set_directive_top pps_synchronizer_control -name pps_synchronizer_control"],
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "KernelName": "pps_synchronizer_control"
+  },
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "3.906",
+    "Uncertainty": "1.05462",
+    "IsCombinational": "1",
+    "II": "1",
+    "Latency": "0"
+  },
+  "Xdc": {
+    
+  },
+  "Ipx": {
+    "Vendor": "MazinLab",
+    "Library": "mkidgen3",
+    "Name": "pps_synchronizer_control",
+    "Version": "0.3",
+    "DisplayName": "PPS Synchronizer",
+    "Revision": "2113174436",
+    "Description": "Create a counter synchronized to a 1PPS signal",
+    "Taxonomy": "\/VITIS_HLS_IP",
+    "AutoFamilySupport": "",
+    "ZipFile": "MazinLab_mkidgen3_pps_synchronizer_control_0_3.zip"
+  },
+  "Files": {
+    "CSource": ["..\/..\/src\/toplevel.cpp"],
+    "Vhdl": [
+      "impl\/vhdl\/pps_synchronizer_control_control_s_axi.vhd",
+      "impl\/vhdl\/pps_synchronizer_control.vhd"
+    ],
+    "Verilog": [
+      "impl\/verilog\/pps_synchronizer_control_control_s_axi.v",
+      "impl\/verilog\/pps_synchronizer_control.v"
+    ],
+    "SwDriver": [
+      "impl\/misc\/drivers\/pps_synchronizer_control_v0_3\/data\/pps_synchronizer_control.mdd",
+      "impl\/misc\/drivers\/pps_synchronizer_control_v0_3\/data\/pps_synchronizer_control.tcl",
+      "impl\/misc\/drivers\/pps_synchronizer_control_v0_3\/src\/Makefile",
+      "impl\/misc\/drivers\/pps_synchronizer_control_v0_3\/src\/xpps_synchronizer_control.c",
+      "impl\/misc\/drivers\/pps_synchronizer_control_v0_3\/src\/xpps_synchronizer_control.h",
+      "impl\/misc\/drivers\/pps_synchronizer_control_v0_3\/src\/xpps_synchronizer_control_hw.h",
+      "impl\/misc\/drivers\/pps_synchronizer_control_v0_3\/src\/xpps_synchronizer_control_linux.c",
+      "impl\/misc\/drivers\/pps_synchronizer_control_v0_3\/src\/xpps_synchronizer_control_sinit.c"
+    ],
+    "IpMisc": ["impl\/misc\/logo.png"],
+    "CsynthXml": "syn\/report\/csynth.xml",
+    "DebugDir": ".debug",
+    "KernelXml": ".autopilot\/db\/kernel.internal.xml",
+    "Xo": "",
+    "XoHlsDir": "",
+    "ProtoInst": [".debug\/pps_synchronizer_control.protoinst"]
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "Ip": []
+  },
+  "Interfaces": {
+    "s_axi_control": {
+      "type": "axi4lite",
+      "busTypeName": "aximm",
+      "mode": "slave",
+      "dataWidth": "32",
+      "addrWidth": "8",
+      "portPrefix": "s_axi_control_",
+      "paramPrefix": "C_S_AXI_CONTROL_",
+      "ports": [
+        "s_axi_control_ARADDR",
+        "s_axi_control_ARREADY",
+        "s_axi_control_ARVALID",
+        "s_axi_control_AWADDR",
+        "s_axi_control_AWREADY",
+        "s_axi_control_AWVALID",
+        "s_axi_control_BREADY",
+        "s_axi_control_BRESP",
+        "s_axi_control_BVALID",
+        "s_axi_control_RDATA",
+        "s_axi_control_RREADY",
+        "s_axi_control_RRESP",
+        "s_axi_control_RVALID",
+        "s_axi_control_WDATA",
+        "s_axi_control_WREADY",
+        "s_axi_control_WSTRB",
+        "s_axi_control_WVALID"
+      ],
+      "registers": [
+        {
+          "offset": "0x10",
+          "name": "mode_reg",
+          "access": "W",
+          "description": "Data signal of mode_reg",
+          "range": "32",
+          "fields": [{
+              "offset": "0",
+              "width": "32",
+              "name": "mode_reg",
+              "access": "W",
+              "description": "Bit 31 to 0 of mode_reg"
+            }]
+        },
+        {
+          "offset": "0x18",
+          "name": "counter_config_reg",
+          "access": "W",
+          "description": "Data signal of counter_config_reg",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "16",
+              "name": "counter_config_reg",
+              "access": "W",
+              "description": "Bit 15 to 0 of counter_config_reg"
+            },
+            {
+              "offset": "16",
+              "width": "16",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x20",
+          "name": "counter_status_reg",
+          "access": "R",
+          "description": "Data signal of counter_status_reg",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "16",
+              "name": "counter_status_reg",
+              "access": "R",
+              "description": "Bit 15 to 0 of counter_status_reg"
+            },
+            {
+              "offset": "16",
+              "width": "16",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x24",
+          "name": "counter_status_reg_ctrl",
+          "access": "R",
+          "description": "Control signal of counter_status_reg",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "counter_status_reg_ap_vld",
+              "access": "R",
+              "description": "Control signal counter_status_reg_ap_vld"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x28",
+          "name": "delay_ns_reg",
+          "access": "W",
+          "description": "Data signal of delay_ns_reg",
+          "range": "32",
+          "fields": [{
+              "offset": "0",
+              "width": "32",
+              "name": "delay_ns_reg",
+              "access": "W",
+              "description": "Bit 31 to 0 of delay_ns_reg"
+            }]
+        },
+        {
+          "offset": "0x30",
+          "name": "load_secs_reg",
+          "access": "W",
+          "description": "Data signal of load_secs_reg",
+          "range": "32",
+          "fields": [{
+              "offset": "0",
+              "width": "32",
+              "name": "load_secs_reg",
+              "access": "W",
+              "description": "Bit 31 to 0 of load_secs_reg"
+            }]
+        },
+        {
+          "offset": "0x38",
+          "name": "load_ns_reg",
+          "access": "W",
+          "description": "Data signal of load_ns_reg",
+          "range": "32",
+          "fields": [{
+              "offset": "0",
+              "width": "32",
+              "name": "load_ns_reg",
+              "access": "W",
+              "description": "Bit 31 to 0 of load_ns_reg"
+            }]
+        },
+        {
+          "offset": "0x40",
+          "name": "load_subns_reg",
+          "access": "W",
+          "description": "Data signal of load_subns_reg",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "8",
+              "name": "load_subns_reg",
+              "access": "W",
+              "description": "Bit 7 to 0 of load_subns_reg"
+            },
+            {
+              "offset": "8",
+              "width": "24",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x48",
+          "name": "capture_secs_reg",
+          "access": "R",
+          "description": "Data signal of capture_secs_reg",
+          "range": "32",
+          "fields": [{
+              "offset": "0",
+              "width": "32",
+              "name": "capture_secs_reg",
+              "access": "R",
+              "description": "Bit 31 to 0 of capture_secs_reg"
+            }]
+        },
+        {
+          "offset": "0x4c",
+          "name": "capture_secs_reg_ctrl",
+          "access": "R",
+          "description": "Control signal of capture_secs_reg",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "capture_secs_reg_ap_vld",
+              "access": "R",
+              "description": "Control signal capture_secs_reg_ap_vld"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x58",
+          "name": "capture_ns_reg",
+          "access": "R",
+          "description": "Data signal of capture_ns_reg",
+          "range": "32",
+          "fields": [{
+              "offset": "0",
+              "width": "32",
+              "name": "capture_ns_reg",
+              "access": "R",
+              "description": "Bit 31 to 0 of capture_ns_reg"
+            }]
+        },
+        {
+          "offset": "0x5c",
+          "name": "capture_ns_reg_ctrl",
+          "access": "R",
+          "description": "Control signal of capture_ns_reg",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "capture_ns_reg_ap_vld",
+              "access": "R",
+              "description": "Control signal capture_ns_reg_ap_vld"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x68",
+          "name": "capture_subns_reg",
+          "access": "R",
+          "description": "Data signal of capture_subns_reg",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "8",
+              "name": "capture_subns_reg",
+              "access": "R",
+              "description": "Bit 7 to 0 of capture_subns_reg"
+            },
+            {
+              "offset": "8",
+              "width": "24",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x6c",
+          "name": "capture_subns_reg_ctrl",
+          "access": "R",
+          "description": "Control signal of capture_subns_reg",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "capture_subns_reg_ap_vld",
+              "access": "R",
+              "description": "Control signal capture_subns_reg_ap_vld"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x78",
+          "name": "current_secs_reg",
+          "access": "R",
+          "description": "Data signal of current_secs_reg",
+          "range": "32",
+          "fields": [{
+              "offset": "0",
+              "width": "32",
+              "name": "current_secs_reg",
+              "access": "R",
+              "description": "Bit 31 to 0 of current_secs_reg"
+            }]
+        },
+        {
+          "offset": "0x7c",
+          "name": "current_secs_reg_ctrl",
+          "access": "R",
+          "description": "Control signal of current_secs_reg",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "current_secs_reg_ap_vld",
+              "access": "R",
+              "description": "Control signal current_secs_reg_ap_vld"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x88",
+          "name": "current_ns_reg",
+          "access": "R",
+          "description": "Data signal of current_ns_reg",
+          "range": "32",
+          "fields": [{
+              "offset": "0",
+              "width": "32",
+              "name": "current_ns_reg",
+              "access": "R",
+              "description": "Bit 31 to 0 of current_ns_reg"
+            }]
+        },
+        {
+          "offset": "0x8c",
+          "name": "current_ns_reg_ctrl",
+          "access": "R",
+          "description": "Control signal of current_ns_reg",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "current_ns_reg_ap_vld",
+              "access": "R",
+              "description": "Control signal current_ns_reg_ap_vld"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x98",
+          "name": "current_subns_reg",
+          "access": "R",
+          "description": "Data signal of current_subns_reg",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "8",
+              "name": "current_subns_reg",
+              "access": "R",
+              "description": "Bit 7 to 0 of current_subns_reg"
+            },
+            {
+              "offset": "8",
+              "width": "24",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x9c",
+          "name": "current_subns_reg_ctrl",
+          "access": "R",
+          "description": "Control signal of current_subns_reg",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "current_subns_reg_ap_vld",
+              "access": "R",
+              "description": "Control signal current_subns_reg_ap_vld"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0xa8",
+          "name": "lockout_reg",
+          "access": "W",
+          "description": "Data signal of lockout_reg",
+          "range": "32",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "16",
+              "name": "lockout_reg",
+              "access": "W",
+              "description": "Bit 15 to 0 of lockout_reg"
+            },
+            {
+              "offset": "16",
+              "width": "16",
+              "name": "RESERVED",
+              "access": "R",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0xb0",
+          "name": "rollover_thresh_reg",
+          "access": "W",
+          "description": "Data signal of rollover_thresh_reg",
+          "range": "32",
+          "fields": [{
+              "offset": "0",
+              "width": "32",
+              "name": "rollover_thresh_reg",
+              "access": "W",
+              "description": "Bit 31 to 0 of rollover_thresh_reg"
+            }]
+        }
+      ],
+      "constraints": [
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "16",
+          "argName": "mode_reg"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "24",
+          "argName": "counter_config_reg"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "32",
+          "argName": "counter_status_reg"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "40",
+          "argName": "delay_ns_reg"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "48",
+          "argName": "load_secs_reg"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "56",
+          "argName": "load_ns_reg"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "64",
+          "argName": "load_subns_reg"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "72",
+          "argName": "capture_secs_reg"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "88",
+          "argName": "capture_ns_reg"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "104",
+          "argName": "capture_subns_reg"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "120",
+          "argName": "current_secs_reg"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "136",
+          "argName": "current_ns_reg"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "152",
+          "argName": "current_subns_reg"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "168",
+          "argName": "lockout_reg"
+        },
+        {
+          "constraint_type": "pragma interface",
+          "mode": "s_axilite",
+          "register_option": "0",
+          "offset": "176",
+          "argName": "rollover_thresh_reg"
+        }
+      ]
+    },
+    "load_secs_ctl": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "master",
+      "dataWidth": "32",
+      "portMap": {"load_secs_ctl": "DATA"},
+      "ports": ["load_secs_ctl"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "load_secs_ctl"
+        }]
+    },
+    "load_ns_ctl": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "master",
+      "dataWidth": "32",
+      "portMap": {"load_ns_ctl": "DATA"},
+      "ports": ["load_ns_ctl"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "load_ns_ctl"
+        }]
+    },
+    "load_subns_ctl": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "master",
+      "dataWidth": "8",
+      "portMap": {"load_subns_ctl": "DATA"},
+      "ports": ["load_subns_ctl"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "load_subns_ctl"
+        }]
+    },
+    "ns_per_clk_ctl": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "master",
+      "dataWidth": "6",
+      "portMap": {"ns_per_clk_ctl": "DATA"},
+      "ports": ["ns_per_clk_ctl"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "ns_per_clk_ctl"
+        }]
+    },
+    "subns_per_clk_ctl": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "master",
+      "dataWidth": "8",
+      "portMap": {"subns_per_clk_ctl": "DATA"},
+      "ports": ["subns_per_clk_ctl"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "subns_per_clk_ctl"
+        }]
+    },
+    "delay_ns_ctl": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "master",
+      "dataWidth": "32",
+      "portMap": {"delay_ns_ctl": "DATA"},
+      "ports": ["delay_ns_ctl"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "delay_ns_ctl"
+        }]
+    },
+    "lockout_ctl": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "master",
+      "dataWidth": "16",
+      "portMap": {"lockout_ctl": "DATA"},
+      "ports": ["lockout_ctl"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "lockout_ctl"
+        }]
+    },
+    "rollover_thresh_ctl": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "master",
+      "dataWidth": "32",
+      "portMap": {"rollover_thresh_ctl": "DATA"},
+      "ports": ["rollover_thresh_ctl"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "rollover_thresh_ctl"
+        }]
+    },
+    "mode_ctl": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "master",
+      "dataWidth": "4",
+      "portMap": {"mode_ctl": "DATA"},
+      "ports": ["mode_ctl"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "mode_ctl"
+        }]
+    },
+    "capture_mode_ctl": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "master",
+      "dataWidth": "2",
+      "portMap": {"capture_mode_ctl": "DATA"},
+      "ports": ["capture_mode_ctl"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "capture_mode_ctl"
+        }]
+    },
+    "sanity_mode_ctl": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "master",
+      "dataWidth": "3",
+      "portMap": {"sanity_mode_ctl": "DATA"},
+      "ports": ["sanity_mode_ctl"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "sanity_mode_ctl"
+        }]
+    },
+    "pps_sel_ctl": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "master",
+      "dataWidth": "3",
+      "portMap": {"pps_sel_ctl": "DATA"},
+      "ports": ["pps_sel_ctl"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "pps_sel_ctl"
+        }]
+    },
+    "captured_secs_in": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"captured_secs_in": "DATA"},
+      "ports": ["captured_secs_in"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "captured_secs_in"
+        }]
+    },
+    "captured_ns_in": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"captured_ns_in": "DATA"},
+      "ports": ["captured_ns_in"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "captured_ns_in"
+        }]
+    },
+    "captured_subns_in": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "slave",
+      "dataWidth": "8",
+      "portMap": {"captured_subns_in": "DATA"},
+      "ports": ["captured_subns_in"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "captured_subns_in"
+        }]
+    },
+    "running_in": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"running_in": "DATA"},
+      "ports": ["running_in"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "running_in"
+        }]
+    },
+    "secs_in": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"secs_in": "DATA"},
+      "ports": ["secs_in"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "secs_in"
+        }]
+    },
+    "ns_in": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "slave",
+      "dataWidth": "32",
+      "portMap": {"ns_in": "DATA"},
+      "ports": ["ns_in"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "ns_in"
+        }]
+    },
+    "subns_in": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "slave",
+      "dataWidth": "8",
+      "portMap": {"subns_in": "DATA"},
+      "ports": ["subns_in"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "subns_in"
+        }]
+    },
+    "captured_in": {
+      "type": "data",
+      "busTypeName": "data",
+      "protocol": "ap_none",
+      "mode": "slave",
+      "dataWidth": "1",
+      "portMap": {"captured_in": "DATA"},
+      "ports": ["captured_in"],
+      "constraints": [{
+          "constraint_type": "pragma interface",
+          "mode": "ap_none",
+          "register_option": "0",
+          "argName": "captured_in"
+        }]
+    },
+    "ap_clk": {
+      "type": "clock",
+      "busTypeName": "clock",
+      "mode": "slave",
+      "busParams": {
+        "ASSOCIATED_BUSIF": "s_axi_control",
+        "ASSOCIATED_RESET": "ap_rst_n"
+      },
+      "portMap": {"ap_clk": "CLK"},
+      "ports": ["ap_clk"]
+    },
+    "ap_rst_n": {
+      "type": "reset",
+      "busTypeName": "reset",
+      "mode": "slave",
+      "busParams": {"POLARITY": "ACTIVE_LOW"},
+      "portMap": {"ap_rst_n": "RST"},
+      "ports": ["ap_rst_n"]
+    }
+  },
+  "RtlPorts": {
+    "s_axi_control_AWVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_control_AWREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_control_AWADDR": {
+      "dir": "in",
+      "width": "8"
+    },
+    "s_axi_control_WVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_control_WREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_control_WDATA": {
+      "dir": "in",
+      "width": "32"
+    },
+    "s_axi_control_WSTRB": {
+      "dir": "in",
+      "width": "4"
+    },
+    "s_axi_control_ARVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_control_ARREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_control_ARADDR": {
+      "dir": "in",
+      "width": "8"
+    },
+    "s_axi_control_RVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_control_RREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_control_RDATA": {
+      "dir": "out",
+      "width": "32"
+    },
+    "s_axi_control_RRESP": {
+      "dir": "out",
+      "width": "2"
+    },
+    "s_axi_control_BVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_control_BREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_control_BRESP": {
+      "dir": "out",
+      "width": "2"
+    },
+    "load_secs_ctl": {
+      "dir": "out",
+      "width": "32"
+    },
+    "load_ns_ctl": {
+      "dir": "out",
+      "width": "32"
+    },
+    "load_subns_ctl": {
+      "dir": "out",
+      "width": "8"
+    },
+    "ns_per_clk_ctl": {
+      "dir": "out",
+      "width": "6"
+    },
+    "subns_per_clk_ctl": {
+      "dir": "out",
+      "width": "8"
+    },
+    "delay_ns_ctl": {
+      "dir": "out",
+      "width": "32"
+    },
+    "lockout_ctl": {
+      "dir": "out",
+      "width": "16"
+    },
+    "rollover_thresh_ctl": {
+      "dir": "out",
+      "width": "32"
+    },
+    "mode_ctl": {
+      "dir": "out",
+      "width": "4"
+    },
+    "capture_mode_ctl": {
+      "dir": "out",
+      "width": "2"
+    },
+    "sanity_mode_ctl": {
+      "dir": "out",
+      "width": "3"
+    },
+    "pps_sel_ctl": {
+      "dir": "out",
+      "width": "3"
+    },
+    "captured_secs_in": {
+      "dir": "in",
+      "width": "32"
+    },
+    "captured_ns_in": {
+      "dir": "in",
+      "width": "32"
+    },
+    "captured_subns_in": {
+      "dir": "in",
+      "width": "8"
+    },
+    "running_in": {
+      "dir": "in",
+      "width": "1",
+      "isVector": "true"
+    },
+    "secs_in": {
+      "dir": "in",
+      "width": "32"
+    },
+    "ns_in": {
+      "dir": "in",
+      "width": "32"
+    },
+    "subns_in": {
+      "dir": "in",
+      "width": "8"
+    },
+    "captured_in": {
+      "dir": "in",
+      "width": "1",
+      "isVector": "true"
+    },
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst_n": {
+      "dir": "in",
+      "width": "1"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {"ModuleName": "pps_synchronizer_control"},
+    "Info": {"pps_synchronizer_control": {
+        "FunctionProtocol": "ap_ctrl_none",
+        "isTaskLevelControl": "0",
+        "isPipelined": "0",
+        "isCombinational": "1",
+        "isOneStateSeq": "0"
+      }},
+    "Metrics": {"pps_synchronizer_control": {
+        "Latency": {
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
+          "PipelineII": "1",
+          "PipelineDepth": "",
+          "PipelineType": "no"
+        },
+        "Timing": {
+          "Target": "3.91",
+          "Uncertainty": "1.05",
+          "Estimate": "1.000"
+        },
+        "Area": {
+          "BRAM_18K": "0",
+          "AVAIL_BRAM": "2160",
+          "UTIL_BRAM": "0",
+          "FF": "480",
+          "AVAIL_FF": "850560",
+          "UTIL_FF": "~0",
+          "LUT": "760",
+          "AVAIL_LUT": "425280",
+          "UTIL_LUT": "~0",
+          "URAM": "0",
+          "AVAIL_URAM": "80",
+          "UTIL_URAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "4272",
+          "UTIL_DSP": "0"
+        }
+      }}
+  },
+  "GenerateBdFiles": "0",
+  "GenData": {
+    "DataVersion": "0.2",
+    "Time": "2023-08-22 16:56:39 PDT",
+    "ToolName": "vitis_hls",
+    "ToolVersion": "2022.1"
+  }
+}

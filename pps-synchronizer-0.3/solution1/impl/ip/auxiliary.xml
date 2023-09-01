@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="pps_synchronizer_control" xd:componentRef="pps_synchronizer_control" xd:initiationInterval="1" xd:clockPeriod="3.906" xd:sequential="false" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="*(mode_reg)" xd:originalName="mode_reg" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(counter_config_reg)" xd:originalName="counter_config_reg" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(counter_status_reg)" xd:originalName="counter_status_reg" xd:direction="out" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x20" xd:statusOffset="0x24" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(delay_ns_reg)" xd:originalName="delay_ns_reg" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x28" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(load_secs_reg)" xd:originalName="load_secs_reg" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x30" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(load_ns_reg)" xd:originalName="load_ns_reg" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x38" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(load_subns_reg)" xd:originalName="load_subns_reg" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x40" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(capture_secs_reg)" xd:originalName="capture_secs_reg" xd:direction="out" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x48" xd:statusOffset="0x4C" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(capture_ns_reg)" xd:originalName="capture_ns_reg" xd:direction="out" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x58" xd:statusOffset="0x5C" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(capture_subns_reg)" xd:originalName="capture_subns_reg" xd:direction="out" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x68" xd:statusOffset="0x6C" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(current_secs_reg)" xd:originalName="current_secs_reg" xd:direction="out" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x78" xd:statusOffset="0x7C" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(current_ns_reg)" xd:originalName="current_ns_reg" xd:direction="out" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x88" xd:statusOffset="0x8C" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(current_subns_reg)" xd:originalName="current_subns_reg" xd:direction="out" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x98" xd:statusOffset="0x9C" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(lockout_reg)" xd:originalName="lockout_reg" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0xA8" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(rollover_thresh_reg)" xd:originalName="rollover_thresh_reg" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0xB0" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="load_secs_ctl" xd:originalName="load_secs_ctl" xd:direction="out" xd:interfaceRef="load_secs_ctl" xd:busTypeRef="register" xd:dataWidth="32"/>
+  <xd:arg xd:name="load_ns_ctl" xd:originalName="load_ns_ctl" xd:direction="out" xd:interfaceRef="load_ns_ctl" xd:busTypeRef="register" xd:dataWidth="32"/>
+  <xd:arg xd:name="load_subns_ctl" xd:originalName="load_subns_ctl" xd:direction="out" xd:interfaceRef="load_subns_ctl" xd:busTypeRef="register" xd:dataWidth="8"/>
+  <xd:arg xd:name="ns_per_clk_ctl" xd:originalName="ns_per_clk_ctl" xd:direction="out" xd:interfaceRef="ns_per_clk_ctl" xd:busTypeRef="register" xd:dataWidth="6"/>
+  <xd:arg xd:name="subns_per_clk_ctl" xd:originalName="subns_per_clk_ctl" xd:direction="out" xd:interfaceRef="subns_per_clk_ctl" xd:busTypeRef="register" xd:dataWidth="8"/>
+  <xd:arg xd:name="delay_ns_ctl" xd:originalName="delay_ns_ctl" xd:direction="out" xd:interfaceRef="delay_ns_ctl" xd:busTypeRef="register" xd:dataWidth="32"/>
+  <xd:arg xd:name="lockout_ctl" xd:originalName="lockout_ctl" xd:direction="out" xd:interfaceRef="lockout_ctl" xd:busTypeRef="register" xd:dataWidth="16"/>
+  <xd:arg xd:name="rollover_thresh_ctl" xd:originalName="rollover_thresh_ctl" xd:direction="out" xd:interfaceRef="rollover_thresh_ctl" xd:busTypeRef="register" xd:dataWidth="32"/>
+  <xd:arg xd:name="mode_ctl" xd:originalName="mode_ctl" xd:direction="out" xd:interfaceRef="mode_ctl" xd:busTypeRef="register" xd:dataWidth="4"/>
+  <xd:arg xd:name="capture_mode_ctl" xd:originalName="capture_mode_ctl" xd:direction="out" xd:interfaceRef="capture_mode_ctl" xd:busTypeRef="register" xd:dataWidth="2"/>
+  <xd:arg xd:name="sanity_mode_ctl" xd:originalName="sanity_mode_ctl" xd:direction="out" xd:interfaceRef="sanity_mode_ctl" xd:busTypeRef="register" xd:dataWidth="3"/>
+  <xd:arg xd:name="pps_sel_ctl" xd:originalName="pps_sel_ctl" xd:direction="out" xd:interfaceRef="pps_sel_ctl" xd:busTypeRef="register" xd:dataWidth="3"/>
+  <xd:arg xd:name="*(captured_secs_in)" xd:originalName="captured_secs_in" xd:direction="in" xd:interfaceRef="captured_secs_in" xd:busTypeRef="register" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(captured_ns_in)" xd:originalName="captured_ns_in" xd:direction="in" xd:interfaceRef="captured_ns_in" xd:busTypeRef="register" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(captured_subns_in)" xd:originalName="captured_subns_in" xd:direction="in" xd:interfaceRef="captured_subns_in" xd:busTypeRef="register" xd:dataWidth="8"/>
+  <xd:arg xd:name="*(running_in)" xd:originalName="running_in" xd:direction="in" xd:interfaceRef="running_in" xd:busTypeRef="register" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(secs_in)" xd:originalName="secs_in" xd:direction="in" xd:interfaceRef="secs_in" xd:busTypeRef="register" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(ns_in)" xd:originalName="ns_in" xd:direction="in" xd:interfaceRef="ns_in" xd:busTypeRef="register" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(subns_in)" xd:originalName="subns_in" xd:direction="in" xd:interfaceRef="subns_in" xd:busTypeRef="register" xd:dataWidth="8"/>
+  <xd:arg xd:name="*(captured_in)" xd:originalName="captured_in" xd:direction="in" xd:interfaceRef="captured_in" xd:busTypeRef="register" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="0" xd:worst-case="0" xd:average-case="0"/>
+  <xd:resourceEstimates xd:LUT="760" xd:FF="480" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

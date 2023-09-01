@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <core name="" type="" target="">
+    <kernel name="pps_synchronizer_control" language="c" vlnv="MazinLab:mkidgen3:pps_synchronizer_control:0.3" attributes="" hash="" preferredWorkGroupSizeMultiple="0" workGroupSize="1" debug="false" interrupt="true">
+      <port name="S_AXI_CONTROL" mode="slave" range="0x1000" portType="addressable" base="0x00000000"/>
+      <arg name="mode_reg" addressQualifier="0" id="0" port="S_AXI_CONTROL" size="0x4" offset="0x10" hostOffset="0x0" hostSize="0x4" type=""/>
+      <arg name="counter_config_reg" addressQualifier="0" id="1" port="S_AXI_CONTROL" size="0x4" offset="0x18" hostOffset="0x0" hostSize="0x4" type=""/>
+      <arg name="counter_status_reg" addressQualifier="0" id="2" port="S_AXI_CONTROL" size="0x4" offset="0x20" hostOffset="0x0" hostSize="0x4" type=""/>
+      <arg name="delay_ns_reg" addressQualifier="0" id="3" port="S_AXI_CONTROL" size="0x4" offset="0x28" hostOffset="0x0" hostSize="0x4" type=""/>
+      <arg name="load_secs_reg" addressQualifier="0" id="4" port="S_AXI_CONTROL" size="0x4" offset="0x30" hostOffset="0x0" hostSize="0x4" type=""/>
+      <arg name="load_ns_reg" addressQualifier="0" id="5" port="S_AXI_CONTROL" size="0x4" offset="0x38" hostOffset="0x0" hostSize="0x4" type=""/>
+      <arg name="load_subns_reg" addressQualifier="0" id="6" port="S_AXI_CONTROL" size="0x4" offset="0x40" hostOffset="0x0" hostSize="0x4" type=""/>
+      <arg name="capture_secs_reg" addressQualifier="0" id="7" port="S_AXI_CONTROL" size="0x4" offset="0x48" hostOffset="0x0" hostSize="0x4" type=""/>
+      <arg name="capture_ns_reg" addressQualifier="0" id="8" port="S_AXI_CONTROL" size="0x4" offset="0x58" hostOffset="0x0" hostSize="0x4" type=""/>
+      <arg name="capture_subns_reg" addressQualifier="0" id="9" port="S_AXI_CONTROL" size="0x4" offset="0x68" hostOffset="0x0" hostSize="0x4" type=""/>
+      <arg name="current_secs_reg" addressQualifier="0" id="10" port="S_AXI_CONTROL" size="0x4" offset="0x78" hostOffset="0x0" hostSize="0x4" type=""/>
+      <arg name="current_ns_reg" addressQualifier="0" id="11" port="S_AXI_CONTROL" size="0x4" offset="0x88" hostOffset="0x0" hostSize="0x4" type=""/>
+      <arg name="current_subns_reg" addressQualifier="0" id="12" port="S_AXI_CONTROL" size="0x4" offset="0x98" hostOffset="0x0" hostSize="0x4" type=""/>
+      <arg name="lockout_reg" addressQualifier="0" id="13" port="S_AXI_CONTROL" size="0x4" offset="0xA8" hostOffset="0x0" hostSize="0x4" type=""/>
+      <arg name="rollover_thresh_reg" addressQualifier="0" id="14" port="S_AXI_CONTROL" size="0x4" offset="0xB0" hostOffset="0x0" hostSize="0x4" type=""/>
+      <compileWorkGroupSize x="1" y="1" z="1"/>
+    </kernel>
+  </core>
+</project>

@@ -1,0 +1,144 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/localdata/xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int_ref.h:724:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/localdata/xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int_ref.h:738:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/localdata/xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int_ref.h:752:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/cudaa/Workspace/hls/pps-synchronizer/script.tcl:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=pps_synchronizer_control" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:49:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = ap_ctrl_none port = return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:51:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = s_axilite port = mode_reg" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:52:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = s_axilite port = counter_config_reg" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:53:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = s_axilite port = counter_status_reg" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:54:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = s_axilite port = delay_ns_reg" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:55:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = s_axilite port = load_secs_reg" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:56:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = s_axilite port = load_ns_reg" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:57:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = s_axilite port = load_subns_reg" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:58:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = s_axilite port = capture_secs_reg" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:59:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = s_axilite port = capture_ns_reg" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:60:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = s_axilite port = capture_subns_reg" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:61:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = s_axilite port = current_secs_reg" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:62:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = s_axilite port = current_ns_reg" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:63:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = s_axilite port = current_subns_reg" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:64:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = s_axilite port = lockout_reg" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:65:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = s_axilite port = rollover_thresh_reg" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:67:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = ap_none port = load_secs_ctl" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:68:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = ap_none port = load_ns_ctl" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:69:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = ap_none port = load_subns_ctl" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:70:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = ap_none port = ns_per_clk_ctl" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:71:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = ap_none port = subns_per_clk_ctl" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:72:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = ap_none port = delay_ns_ctl" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:73:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = ap_none port = lockout_ctl" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:74:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = ap_none port = rollover_thresh_ctl" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:75:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = ap_none port = mode_ctl" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:76:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = ap_none port = capture_mode_ctl" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:77:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = ap_none port = sanity_mode_ctl" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:78:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = ap_none port = pps_sel_ctl" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:79:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = ap_none port = captured_secs_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:80:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = ap_none port = captured_ns_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:81:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = ap_none port = captured_subns_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:82:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = ap_none port = running_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:83:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = ap_none port = secs_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:84:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = ap_none port = ns_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:85:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = ap_none port = subns_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="src/toplevel.cpp:86:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pps_synchronizer_control" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode = ap_none port = captured_in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="src/toplevel.cpp:47:0" msg_body="Aggregating scalar variable 'captured_in' with compact=bit mode in 1-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="1" HwTyName="scalar" Name="captured_in"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="src/toplevel.cpp:47:0" msg_body="Aggregating scalar variable 'running_in' with compact=bit mode in 1-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="1" HwTyName="scalar" Name="running_in"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="src/toplevel.cpp:47:0" msg_body="Aggregating scalar variable 'pps_sel_ctl' with compact=bit mode in 3-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="3" HwTyName="scalar" Name="pps_sel_ctl"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="src/toplevel.cpp:47:0" msg_body="Aggregating scalar variable 'sanity_mode_ctl' with compact=bit mode in 3-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="3" HwTyName="scalar" Name="sanity_mode_ctl"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="src/toplevel.cpp:47:0" msg_body="Aggregating scalar variable 'capture_mode_ctl' with compact=bit mode in 2-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="2" HwTyName="scalar" Name="capture_mode_ctl"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="src/toplevel.cpp:47:0" msg_body="Aggregating scalar variable 'mode_ctl' with compact=bit mode in 4-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="4" HwTyName="scalar" Name="mode_ctl"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="src/toplevel.cpp:47:0" msg_body="Aggregating scalar variable 'ns_per_clk_ctl' with compact=bit mode in 6-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="6" HwTyName="scalar" Name="ns_per_clk_ctl"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

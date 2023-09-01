@@ -1,0 +1,18 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "pps_synchronizer_control",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/home\/cudaa\/Workspace\/hls\/pps-synchronizer\/script.tcl",
+          "sourceLine": "24",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "pps_synchronizer_control"
+              }]
+          }
+        }]
+    }]}

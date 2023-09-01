@@ -1,0 +1,26 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <name>
+        <value string="solution1"/>
+    </name>
+    <project>
+        <value string="pps-synchronizer"/>
+    </project>
+    <flowTarget value="vivado"/>
+    <config>
+        <config_interface m_axi_latency="0"/>
+        <config_export description="Create a counter synchronized to a 1PPS signal" display_name="PPS Synchronizer" format="ip_catalog" library="mkidgen3" rtl="verilog" vendor="MazinLab" version="0.3"/>
+    </config>
+    <targetInfo>
+        <TargetInfo value="xczu28dr:-ffvg1517:-2-e"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/zynquplus/zynquplus" name="DefaultPlatform"/>
+    </libraryList>
+    <clockList>
+        <clock name="default" period="256MHz" default="false"/>
+    </clockList>
+    <ExportDesign askAgain="true" evaluate="false" rtl="verilog" formatName="ip_catalog">
+        <Format formatName="ip_catalog" description="Create a counter synchronized to a 1PPS signal" vendor="MazinLab" library="mkidgen3" ipname="pps_synchronizer_control" version="0.3" display_name="PPS Synchronizer" taxonomy=""/>
+    </ExportDesign>
+</AutoPilot:solution>
+

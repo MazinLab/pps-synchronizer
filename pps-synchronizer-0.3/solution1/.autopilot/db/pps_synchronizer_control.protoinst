@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"pps_synchronizer_control": {
+			"proto_instances": {
+			}
+		}
+	}
+}

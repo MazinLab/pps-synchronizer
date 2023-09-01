@@ -1,0 +1,255 @@
+
+
+================================================================
+== Synthesis Summary Report of 'pps_synchronizer_control'
+================================================================
++ General Information: 
+    * Date:           Tue Aug 22 16:56:37 2023
+    * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+    * Project:        pps-synchronizer
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu28dr-ffvg1517-2-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |           Modules          | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |           |           |     |
+    |           & Loops          | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT    | URAM|
+    +----------------------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+    |+ pps_synchronizer_control  |     -|  1.86|        0|   0.000|         -|        1|     -|        no|     -|   -|  480 (~0%)|  760 (~0%)|    -|
+    +----------------------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 8             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+-------------------------+--------+-------+--------+--------------------------------------+-----------------------------+
+| Interface     | Register                | Offset | Width | Access | Description                          | Bit Fields                  |
++---------------+-------------------------+--------+-------+--------+--------------------------------------+-----------------------------+
+| s_axi_control | mode_reg                | 0x10   | 32    | W      | Data signal of mode_reg              |                             |
+| s_axi_control | counter_config_reg      | 0x18   | 32    | W      | Data signal of counter_config_reg    |                             |
+| s_axi_control | counter_status_reg      | 0x20   | 32    | R      | Data signal of counter_status_reg    |                             |
+| s_axi_control | counter_status_reg_ctrl | 0x24   | 32    | R      | Control signal of counter_status_reg | 0=counter_status_reg_ap_vld |
+| s_axi_control | delay_ns_reg            | 0x28   | 32    | W      | Data signal of delay_ns_reg          |                             |
+| s_axi_control | load_secs_reg           | 0x30   | 32    | W      | Data signal of load_secs_reg         |                             |
+| s_axi_control | load_ns_reg             | 0x38   | 32    | W      | Data signal of load_ns_reg           |                             |
+| s_axi_control | load_subns_reg          | 0x40   | 32    | W      | Data signal of load_subns_reg        |                             |
+| s_axi_control | capture_secs_reg        | 0x48   | 32    | R      | Data signal of capture_secs_reg      |                             |
+| s_axi_control | capture_secs_reg_ctrl   | 0x4c   | 32    | R      | Control signal of capture_secs_reg   | 0=capture_secs_reg_ap_vld   |
+| s_axi_control | capture_ns_reg          | 0x58   | 32    | R      | Data signal of capture_ns_reg        |                             |
+| s_axi_control | capture_ns_reg_ctrl     | 0x5c   | 32    | R      | Control signal of capture_ns_reg     | 0=capture_ns_reg_ap_vld     |
+| s_axi_control | capture_subns_reg       | 0x68   | 32    | R      | Data signal of capture_subns_reg     |                             |
+| s_axi_control | capture_subns_reg_ctrl  | 0x6c   | 32    | R      | Control signal of capture_subns_reg  | 0=capture_subns_reg_ap_vld  |
+| s_axi_control | current_secs_reg        | 0x78   | 32    | R      | Data signal of current_secs_reg      |                             |
+| s_axi_control | current_secs_reg_ctrl   | 0x7c   | 32    | R      | Control signal of current_secs_reg   | 0=current_secs_reg_ap_vld   |
+| s_axi_control | current_ns_reg          | 0x88   | 32    | R      | Data signal of current_ns_reg        |                             |
+| s_axi_control | current_ns_reg_ctrl     | 0x8c   | 32    | R      | Control signal of current_ns_reg     | 0=current_ns_reg_ap_vld     |
+| s_axi_control | current_subns_reg       | 0x98   | 32    | R      | Data signal of current_subns_reg     |                             |
+| s_axi_control | current_subns_reg_ctrl  | 0x9c   | 32    | R      | Control signal of current_subns_reg  | 0=current_subns_reg_ap_vld  |
+| s_axi_control | lockout_reg             | 0xa8   | 32    | W      | Data signal of lockout_reg           |                             |
+| s_axi_control | rollover_thresh_reg     | 0xb0   | 32    | W      | Data signal of rollover_thresh_reg   |                             |
++---------------+-------------------------+--------+-------+--------+--------------------------------------+-----------------------------+
+
+* REGISTER
++---------------------+---------+----------+
+| Interface           | Mode    | Bitwidth |
++---------------------+---------+----------+
+| capture_mode_ctl    | ap_none | 2        |
+| captured_in         | ap_none | 1        |
+| captured_ns_in      | ap_none | 32       |
+| captured_secs_in    | ap_none | 32       |
+| captured_subns_in   | ap_none | 8        |
+| delay_ns_ctl        | ap_none | 32       |
+| load_ns_ctl         | ap_none | 32       |
+| load_secs_ctl       | ap_none | 32       |
+| load_subns_ctl      | ap_none | 8        |
+| lockout_ctl         | ap_none | 16       |
+| mode_ctl            | ap_none | 4        |
+| ns_in               | ap_none | 32       |
+| ns_per_clk_ctl      | ap_none | 6        |
+| pps_sel_ctl         | ap_none | 3        |
+| rollover_thresh_ctl | ap_none | 32       |
+| running_in          | ap_none | 1        |
+| sanity_mode_ctl     | ap_none | 3        |
+| secs_in             | ap_none | 32       |
+| subns_in            | ap_none | 8        |
+| subns_per_clk_ctl   | ap_none | 8        |
++---------------------+---------+----------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++---------------------+-----------+-----------------+
+| Argument            | Direction | Datatype        |
++---------------------+-----------+-----------------+
+| mode_reg            | in        | pointer         |
+| counter_config_reg  | in        | pointer         |
+| counter_status_reg  | out       | pointer         |
+| delay_ns_reg        | in        | unsigned int*   |
+| load_secs_reg       | in        | unsigned int*   |
+| load_ns_reg         | in        | unsigned int*   |
+| load_subns_reg      | in        | unsigned char*  |
+| capture_secs_reg    | out       | unsigned int*   |
+| capture_ns_reg      | out       | unsigned int*   |
+| capture_subns_reg   | out       | unsigned char*  |
+| current_secs_reg    | out       | unsigned int*   |
+| current_ns_reg      | out       | unsigned int*   |
+| current_subns_reg   | out       | unsigned char*  |
+| lockout_reg         | in        | unsigned short* |
+| rollover_thresh_reg | in        | unsigned int*   |
+| load_secs_ctl       | out       | unsigned int&   |
+| load_ns_ctl         | out       | unsigned int&   |
+| load_subns_ctl      | out       | unsigned char&  |
+| ns_per_clk_ctl      | out       | ap_uint<6>&     |
+| subns_per_clk_ctl   | out       | unsigned char&  |
+| delay_ns_ctl        | out       | unsigned int&   |
+| lockout_ctl         | out       | unsigned short& |
+| rollover_thresh_ctl | out       | unsigned int&   |
+| mode_ctl            | out       | ap_uint<4>&     |
+| capture_mode_ctl    | out       | ap_uint<2>&     |
+| sanity_mode_ctl     | out       | ap_uint<3>&     |
+| pps_sel_ctl         | out       | ap_uint<3>&     |
+| captured_secs_in    | in        | unsigned int*   |
+| captured_ns_in      | in        | unsigned int*   |
+| captured_subns_in   | in        | unsigned char*  |
+| running_in          | in        | ap_uint<1>*     |
+| secs_in             | in        | unsigned int*   |
+| ns_in               | in        | unsigned int*   |
+| subns_in            | in        | unsigned char*  |
+| captured_in         | in        | ap_uint<1>*     |
++---------------------+-----------+-----------------+
+
+* SW-to-HW Mapping
++---------------------+---------------------+----------+---------------------------------------------------+
+| Argument            | HW Interface        | HW Type  | HW Info                                           |
++---------------------+---------------------+----------+---------------------------------------------------+
+| mode_reg            | s_axi_control       | register | name=mode_reg offset=0x10 range=32                |
+| counter_config_reg  | s_axi_control       | register | name=counter_config_reg offset=0x18 range=32      |
+| counter_status_reg  | s_axi_control       | register | name=counter_status_reg offset=0x20 range=32      |
+| counter_status_reg  | s_axi_control       | register | name=counter_status_reg_ctrl offset=0x24 range=32 |
+| delay_ns_reg        | s_axi_control       | register | name=delay_ns_reg offset=0x28 range=32            |
+| load_secs_reg       | s_axi_control       | register | name=load_secs_reg offset=0x30 range=32           |
+| load_ns_reg         | s_axi_control       | register | name=load_ns_reg offset=0x38 range=32             |
+| load_subns_reg      | s_axi_control       | register | name=load_subns_reg offset=0x40 range=32          |
+| capture_secs_reg    | s_axi_control       | register | name=capture_secs_reg offset=0x48 range=32        |
+| capture_secs_reg    | s_axi_control       | register | name=capture_secs_reg_ctrl offset=0x4c range=32   |
+| capture_ns_reg      | s_axi_control       | register | name=capture_ns_reg offset=0x58 range=32          |
+| capture_ns_reg      | s_axi_control       | register | name=capture_ns_reg_ctrl offset=0x5c range=32     |
+| capture_subns_reg   | s_axi_control       | register | name=capture_subns_reg offset=0x68 range=32       |
+| capture_subns_reg   | s_axi_control       | register | name=capture_subns_reg_ctrl offset=0x6c range=32  |
+| current_secs_reg    | s_axi_control       | register | name=current_secs_reg offset=0x78 range=32        |
+| current_secs_reg    | s_axi_control       | register | name=current_secs_reg_ctrl offset=0x7c range=32   |
+| current_ns_reg      | s_axi_control       | register | name=current_ns_reg offset=0x88 range=32          |
+| current_ns_reg      | s_axi_control       | register | name=current_ns_reg_ctrl offset=0x8c range=32     |
+| current_subns_reg   | s_axi_control       | register | name=current_subns_reg offset=0x98 range=32       |
+| current_subns_reg   | s_axi_control       | register | name=current_subns_reg_ctrl offset=0x9c range=32  |
+| lockout_reg         | s_axi_control       | register | name=lockout_reg offset=0xa8 range=32             |
+| rollover_thresh_reg | s_axi_control       | register | name=rollover_thresh_reg offset=0xb0 range=32     |
+| load_secs_ctl       | load_secs_ctl       | port     |                                                   |
+| load_ns_ctl         | load_ns_ctl         | port     |                                                   |
+| load_subns_ctl      | load_subns_ctl      | port     |                                                   |
+| ns_per_clk_ctl      | ns_per_clk_ctl      | port     |                                                   |
+| subns_per_clk_ctl   | subns_per_clk_ctl   | port     |                                                   |
+| delay_ns_ctl        | delay_ns_ctl        | port     |                                                   |
+| lockout_ctl         | lockout_ctl         | port     |                                                   |
+| rollover_thresh_ctl | rollover_thresh_ctl | port     |                                                   |
+| mode_ctl            | mode_ctl            | port     |                                                   |
+| capture_mode_ctl    | capture_mode_ctl    | port     |                                                   |
+| sanity_mode_ctl     | sanity_mode_ctl     | port     |                                                   |
+| pps_sel_ctl         | pps_sel_ctl         | port     |                                                   |
+| captured_secs_in    | captured_secs_in    | port     |                                                   |
+| captured_ns_in      | captured_ns_in      | port     |                                                   |
+| captured_subns_in   | captured_subns_in   | port     |                                                   |
+| running_in          | running_in          | port     |                                                   |
+| secs_in             | secs_in             | port     |                                                   |
+| ns_in               | ns_in               | port     |                                                   |
+| subns_in            | subns_in            | port     |                                                   |
+| captured_in         | captured_in         | port     |                                                   |
++---------------------+---------------------+----------+---------------------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+  No burst in design
+
+================================================================
+== Bind Op Report
+================================================================
+  No bind op info in design
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+---------------------------------------------+-------------------------------------------------+
+| Type      | Options                                     | Location                                        |
++-----------+---------------------------------------------+-------------------------------------------------+
+| interface | mode = ap_ctrl_none port = return           | src/toplevel.cpp:49 in pps_synchronizer_control |
+| interface | mode = s_axilite port = mode_reg            | src/toplevel.cpp:51 in pps_synchronizer_control |
+| interface | mode = s_axilite port = counter_config_reg  | src/toplevel.cpp:52 in pps_synchronizer_control |
+| interface | mode = s_axilite port = counter_status_reg  | src/toplevel.cpp:53 in pps_synchronizer_control |
+| interface | mode = s_axilite port = delay_ns_reg        | src/toplevel.cpp:54 in pps_synchronizer_control |
+| interface | mode = s_axilite port = load_secs_reg       | src/toplevel.cpp:55 in pps_synchronizer_control |
+| interface | mode = s_axilite port = load_ns_reg         | src/toplevel.cpp:56 in pps_synchronizer_control |
+| interface | mode = s_axilite port = load_subns_reg      | src/toplevel.cpp:57 in pps_synchronizer_control |
+| interface | mode = s_axilite port = capture_secs_reg    | src/toplevel.cpp:58 in pps_synchronizer_control |
+| interface | mode = s_axilite port = capture_ns_reg      | src/toplevel.cpp:59 in pps_synchronizer_control |
+| interface | mode = s_axilite port = capture_subns_reg   | src/toplevel.cpp:60 in pps_synchronizer_control |
+| interface | mode = s_axilite port = current_secs_reg    | src/toplevel.cpp:61 in pps_synchronizer_control |
+| interface | mode = s_axilite port = current_ns_reg      | src/toplevel.cpp:62 in pps_synchronizer_control |
+| interface | mode = s_axilite port = current_subns_reg   | src/toplevel.cpp:63 in pps_synchronizer_control |
+| interface | mode = s_axilite port = lockout_reg         | src/toplevel.cpp:64 in pps_synchronizer_control |
+| interface | mode = s_axilite port = rollover_thresh_reg | src/toplevel.cpp:65 in pps_synchronizer_control |
+| interface | mode = ap_none port = load_secs_ctl         | src/toplevel.cpp:67 in pps_synchronizer_control |
+| interface | mode = ap_none port = load_ns_ctl           | src/toplevel.cpp:68 in pps_synchronizer_control |
+| interface | mode = ap_none port = load_subns_ctl        | src/toplevel.cpp:69 in pps_synchronizer_control |
+| interface | mode = ap_none port = ns_per_clk_ctl        | src/toplevel.cpp:70 in pps_synchronizer_control |
+| interface | mode = ap_none port = subns_per_clk_ctl     | src/toplevel.cpp:71 in pps_synchronizer_control |
+| interface | mode = ap_none port = delay_ns_ctl          | src/toplevel.cpp:72 in pps_synchronizer_control |
+| interface | mode = ap_none port = lockout_ctl           | src/toplevel.cpp:73 in pps_synchronizer_control |
+| interface | mode = ap_none port = rollover_thresh_ctl   | src/toplevel.cpp:74 in pps_synchronizer_control |
+| interface | mode = ap_none port = mode_ctl              | src/toplevel.cpp:75 in pps_synchronizer_control |
+| interface | mode = ap_none port = capture_mode_ctl      | src/toplevel.cpp:76 in pps_synchronizer_control |
+| interface | mode = ap_none port = sanity_mode_ctl       | src/toplevel.cpp:77 in pps_synchronizer_control |
+| interface | mode = ap_none port = pps_sel_ctl           | src/toplevel.cpp:78 in pps_synchronizer_control |
+| interface | mode = ap_none port = captured_secs_in      | src/toplevel.cpp:79 in pps_synchronizer_control |
+| interface | mode = ap_none port = captured_ns_in        | src/toplevel.cpp:80 in pps_synchronizer_control |
+| interface | mode = ap_none port = captured_subns_in     | src/toplevel.cpp:81 in pps_synchronizer_control |
+| interface | mode = ap_none port = running_in            | src/toplevel.cpp:82 in pps_synchronizer_control |
+| interface | mode = ap_none port = secs_in               | src/toplevel.cpp:83 in pps_synchronizer_control |
+| interface | mode = ap_none port = ns_in                 | src/toplevel.cpp:84 in pps_synchronizer_control |
+| interface | mode = ap_none port = subns_in              | src/toplevel.cpp:85 in pps_synchronizer_control |
+| interface | mode = ap_none port = captured_in           | src/toplevel.cpp:86 in pps_synchronizer_control |
++-----------+---------------------------------------------+-------------------------------------------------+
+
+
