@@ -1,0 +1,4 @@
+#ifndef _PPS_SYNCHRONIZER_TOP
+#define _PPS_SYNCHRONIZER_TOP
+
+#endif
