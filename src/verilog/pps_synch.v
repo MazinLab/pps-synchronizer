@@ -67,7 +67,11 @@ module pps_synch(
 	// Sub Nanosecond counter output
 	output	[7:0]	subns,
 	// Indicates that the timer is running
-	output		running
+	output		running,
+	
+	// Output microsecond timestamp
+	output  [63:0]  timestamp_us,
+	output          timestamp_valid
 );
 
 	reg	   started;
@@ -113,6 +117,8 @@ module pps_synch(
 
 	reg sysref_internal;
 	reg last_sysref;
+	
+	timestamptous tstous (clk, secs, ns, subns, started, timestamp_valid, timestamp_us);
 
 	always @(posedge clk) begin
 		// Housekeeping
@@ -232,4 +238,102 @@ module pps_synch(
 		end
 		if (started == 1 && mode == 0) started <= 0;
 	end
+endmodule
+
+// microsecond timestamp valid for ~400 years
+// Retiming should be enabled for synthesis
+module timestamptous(
+    input       clk,
+    input   [31:0]  secs,
+    input   [31:0]  ns,
+    input   [7:0]   subns,
+    input           started,
+    output          valid,
+    output  [63:0]  us
+);
+    reg     [63:0]  us_oreg;
+    reg     [63:0]  us_holdreg;
+    reg     [63:0]  us_sumreg;
+
+    reg     [5:0]   validdly;
+
+    wire    [31:0]  div_manual;
+
+    wire    [63:0]  ns_pad;
+    wire    [63:0]  secs_pad;
+
+    reg     [63:0]  ns_d0_l0;
+    reg     [63:0]  ns_d0_l1;
+    reg     [63:0]  ns_d0_l2;
+    reg     [63:0]  ns_d0_l3;
+    reg     [63:0]  ns_d0_l4;
+
+    reg     [63:0]  ns_d1_l0;
+    reg     [63:0]  ns_d1_l1;
+    reg     [63:0]  ns_d1_l2;
+
+    reg     [63:0]  ns_d2_l0;
+    reg     [63:0]  ns_d2_l1;
+
+    reg     [63:0]  ns_d3;
+
+    reg     [63:0]  secs_d0_l0;
+    reg     [63:0]  secs_d0_l1;
+    reg     [63:0]  secs_d0_l2;
+    reg     [63:0]  secs_d0_l3;
+
+    reg     [63:0]  secs_d1_l0;
+    reg     [63:0]  secs_d1_l1;
+
+    reg     [63:0]  secs_d2;
+
+    reg     [63:0]  secs_d3;
+
+    assign us = us_oreg;
+    assign valid = validdly[5];
+
+    assign ns_pad = {ns, subns, 24'b0};
+    assign secs_pad = {32'b0, secs};
+
+    always @(posedge clk) begin
+        us_oreg <= us_holdreg;
+        us_sumreg <= secs_d3 + ns_d3;
+
+        if (us_sumreg > us_holdreg) us_holdreg <= us_sumreg;
+
+        ns_d0_l0 <= (ns_pad >> 10) + (ns_pad >> 16);
+        ns_d0_l1 <= (ns_pad >> 17) + (ns_pad >> 21);
+        ns_d0_l2 <= (ns_pad >> 24) + (ns_pad >> 27);
+        ns_d0_l3 <= (ns_pad >> 28) + (ns_pad >> 30);
+        ns_d0_l4 <= (ns_pad >> 31) + (ns_pad >> 32);
+
+        ns_d1_l0 <= ns_d0_l1 + ns_d0_l4;
+        ns_d1_l1 <= ns_d0_l2 + ns_d0_l3;
+        ns_d1_l2 <= ns_d0_l0;
+ 
+        ns_d2_l0 <= ns_d1_l2 + ns_d1_l0;
+        ns_d2_l1 <= ns_d1_l1;
+ 
+        ns_d3 <= (ns_d2_l0 + ns_d2_l1) >> 32;
+
+        secs_d0_l0 <= (secs_pad << 19) + (secs_pad << 18);
+        secs_d0_l1 <= (secs_pad << 17) + (secs_pad << 16);
+        secs_d0_l2 <= (secs_pad << 14) + (secs_pad << 9);
+        secs_d0_l3 <= (secs_pad << 6);
+ 
+        secs_d1_l0 <= secs_d0_l0 + secs_d0_l2;
+        secs_d1_l1 <= secs_d0_l1 + secs_d0_l3;
+ 
+        secs_d2 <= secs_d1_l0 + secs_d1_l1;
+ 
+        secs_d3 <= secs_d2;
+
+
+        validdly[5] <= validdly[4];
+        validdly[4] <= validdly[3];
+        validdly[3] <= validdly[2];
+        validdly[2] <= validdly[1];
+        validdly[1] <= validdly[0];
+        validdly[0] <= started;
+    end
 endmodule
